@@ -92,7 +92,7 @@ TEST(PiezasTest, boardReset)
 	ASSERT_EQ(game.pieceAt(0,3), Blank);
 }
 
-TEST(PiezasTest, boardReset)
+TEST(PiezasTest, boardInvalid)
 {
 	Piezas game;
 
