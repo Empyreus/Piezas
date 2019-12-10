@@ -32,7 +32,6 @@ Piezas::Piezas()
 **/
 void Piezas::reset()
 {
-	board = 
 }
 
 /**
