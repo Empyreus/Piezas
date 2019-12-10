@@ -31,10 +31,10 @@ TEST(PiezasTest, initBoardPeiceCheck)
 	Piezas game;
 	game.dropPiece(3);
 
-	std::cout << X << endl;
-	std::cout << O << endl;
-	std::cout << Blank << endl;
-	std::cout << game.pieceAt(2,3) << endl;
+	std::cout << X << std::endl;
+	std::cout << O << std::endl;
+	std::cout << Blank << std::endl;
+	std::cout << game.pieceAt(2,3) << std::endl;
 
 
 	ASSERT_EQ(game.pieceAt(2,3), X);
