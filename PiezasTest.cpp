@@ -98,3 +98,24 @@ TEST(PiezasTest, boardInvalid)
 
 	ASSERT_EQ(game.gameState(), Invalid);
 }
+
+TEST(PiezasTest, winnerBlank)
+{
+	Piezas game;
+	game.dropPiece(3);
+	game.dropPiece(3);
+	game.dropPiece(3);
+	game.dropPiece(2);
+	game.dropPiece(2);
+	game.dropPiece(2);
+	game.dropPiece(1);
+	game.dropPiece(1);
+	game.dropPiece(1);
+	game.dropPiece(0);
+	game.dropPiece(0);
+	game.dropPiece(0);
+
+
+
+	ASSERT_EQ(game.gameState(), Blank);
+}
