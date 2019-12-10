@@ -48,17 +48,17 @@ void Piezas::reset()
 Piece Piezas::dropPiece(int column)
 {
 
-	if(board[0][column] == Blank){
-		board[0][column] = turn;
-		std::cout << "Piece at: " << 0 << column << std::endl;
+	if(board[2][column] == Blank){
+		board[2][column] = turn;
+		std::cout << "Piece at: " << 2 << " " << column << std::endl;
 	}
 	else if(board[1][column] == Blank){
 		board[1][column] = turn;
-		std::cout << "Piece at: " << 1 << column << std::endl;
+		std::cout << "Piece at: " << 1 << " " << column << std::endl;
 	}
-	else if(board[2][column] == Blank){
-		board[2][column] = turn;
-		std::cout << "Piece at: " << 2 << column << std::endl;
+	else if(board[0][column] == Blank){
+		board[0][column] = turn;
+		std::cout << "Piece at: " << 0 <<  " " << column << std::endl;
 	}
 
 	Piece old_turn = turn;
