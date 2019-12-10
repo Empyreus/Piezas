@@ -141,5 +141,29 @@ TEST(PiezasTest, winnerX)
 
 
 
-	ASSERT_EQ(game.gameState(), Blank);
+	ASSERT_EQ(game.gameState(), X);
+}
+
+TEST(PiezasTest, winnerO)
+{
+	Piezas game;
+	game.dropPiece(3);
+	game.dropPiece(3);
+	game.dropPiece(2);
+	game.dropPiece(2);
+	game.dropPiece(1);
+	game.dropPiece(1);
+	game.dropPiece(3);
+	game.dropPiece(0);
+	game.dropPiece(2);
+	game.dropPiece(0);
+	game.dropPiece(0);
+	game.dropPiece(1);
+	game.dropPiece(0);
+	game.dropPiece(1);
+
+
+
+
+	ASSERT_EQ(game.gameState(), O);
 }
