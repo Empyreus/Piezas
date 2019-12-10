@@ -131,7 +131,7 @@ Piece Piezas::gameState()
 		int countO = 0;
 		
 		for(int i = 1; i < 4; i++){
-			if(board[j][i] == board[j-1][i]){
+			if(board[j][i] == board[j][i-1]){
 				if(board[j][i] == X){
 					countX++;
 				}
