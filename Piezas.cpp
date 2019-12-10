@@ -138,9 +138,6 @@ Piece Piezas::gameState()
 				else if(board[j][i] == O){
 					countO++;
 				}
-				else if(board[j][i] == Blank){
-					return Invalid;
-				}
 			}
 		}
 
