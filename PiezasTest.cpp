@@ -187,3 +187,23 @@ TEST(PiezasTest, winnerX2)
 
 	ASSERT_EQ(game.gameState(), X);
 }
+
+TEST(PiezasTest, fulBoardPiece)
+{
+	Piezas game;
+	game.dropPiece(0);
+	game.dropPiece(1);
+	game.dropPiece(0);
+	game.dropPiece(1);
+	game.dropPiece(0);
+	game.dropPiece(3);
+	game.dropPiece(1);
+	game.dropPiece(3);
+	game.dropPiece(2);
+	game.dropPiece(1);
+	game.dropPiece(2);
+	game.dropPiece(2);
+	game.dropPiece(3);
+
+	ASSERT_EQ(game.pieceAt(0,3), X);
+}
