@@ -99,7 +99,7 @@ Piece Piezas::gameState()
 
 	for(int i = 0; i < 3; i++){
 		for(int j = 0; j < 4; j++){
-			std::cout << board[j][i] << " | ";
+			std::cout << board[i][j] << " | ";
 		}
 		std::cout << std::endl;
 	}
