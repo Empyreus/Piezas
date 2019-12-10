@@ -48,7 +48,7 @@ TEST(PiezasTest, sameBoardPeiceCheck)
 	ASSERT_EQ(game.pieceAt(1,3), O);
 }
 
-TEST(PiezasTest, sameBoardColumn2)
+TEST(PiezasTest, sameBoardColumn31)
 {
 	Piezas game;
 	game.dropPiece(3);
@@ -56,4 +56,36 @@ TEST(PiezasTest, sameBoardColumn2)
 	game.dropPiece(3);
 
 	ASSERT_EQ(game.pieceAt(0,3), X);
+}
+
+TEST(PiezasTest, sameBoardColumn32)
+{
+	Piezas game;
+	game.dropPiece(3);
+	game.dropPiece(3);
+	game.dropPiece(3);
+
+	ASSERT_EQ(game.pieceAt(0,3), X);
+}
+
+TEST(PiezasTest, sameBoardColumn32)
+{
+	Piezas game;
+	game.dropPiece(3);
+	game.dropPiece(3);
+	game.dropPiece(3);
+
+	ASSERT_EQ(game.pieceAt(0,3), X);
+}
+
+TEST(PiezasTest, sameBoardColumn32)
+{
+	Piezas game;
+	game.dropPiece(3);
+	game.dropPiece(3);
+	game.dropPiece(3);
+
+	game.reset();
+
+	ASSERT_EQ(game.pieceAt(0,3), Blank);
 }
