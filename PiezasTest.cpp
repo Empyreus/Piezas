@@ -19,8 +19,9 @@ TEST(PiezasTest, sanityCheck)
 	ASSERT_TRUE(true);
 }
 
-TEST(PiezasTest, initBoard)
+TEST(PiezasTest, initBoardPeiceCheck)
 {
 	Piezas game;
-	game.turn;
+
+	ASSERT_EQ(game.pieceAt(3,4), Blank);
 }

@@ -32,6 +32,8 @@ Piezas::Piezas()
 **/
 void Piezas::reset()
 {
+	board = std::vector < std::vector<Piece> >(3, std::vector<Piece>(4, Blank));
+	turn = X;
 }
 
 /**
@@ -53,7 +55,7 @@ Piece Piezas::dropPiece(int column)
 **/
 Piece Piezas::pieceAt(int row, int column)
 {
-    return Blank;
+    return board[row][column];
 }
 
 /**
