@@ -57,7 +57,7 @@ Piece Piezas::dropPiece(int column)
 		board[2][column] = turn;
 	}
 
-	old_turn = turn;
+	Piece old_turn = turn;
 
 	if(turn == O){
 		turn = X;
