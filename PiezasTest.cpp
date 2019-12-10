@@ -39,3 +39,21 @@ TEST(PiezasTest, initBoardPeiceCheck)
 	ASSERT_EQ(game.pieceAt(2,3), X);
 }
 
+TEST(PiezasTest, sameBoardPeiceCheck)
+{
+	Piezas game;
+	game.dropPiece(3);
+	game.dropPiece(3);
+
+	ASSERT_EQ(game.pieceAt(1,3), O);
+}
+
+TEST(PiezasTest, sameBoardColumn2)
+{
+	Piezas game;
+	game.dropPiece(3);
+	game.dropPiece(3);
+	game.dropPiece(3);
+
+	ASSERT_EQ(game.pieceAt(0,3), X);
+}
