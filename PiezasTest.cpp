@@ -31,6 +31,8 @@ TEST(PiezasTest, initBoardPeiceCheck)
 	Piezas game;
 	game.dropPiece(3);
 
+	std::cout << game.pieceAt(2,3);
+
 	ASSERT_EQ(game.pieceAt(2,3), X);
 }
 

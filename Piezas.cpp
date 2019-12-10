@@ -66,7 +66,7 @@ Piece Piezas::dropPiece(int column)
 		turn = O;
 	}
 
-    return turn;
+    return old_turn;
 }
 
 /**
