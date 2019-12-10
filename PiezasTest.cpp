@@ -18,3 +18,9 @@ TEST(PiezasTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+
+TEST(PiezasTest, initBoard)
+{
+	Piezas game;
+	game.turn;
+}
