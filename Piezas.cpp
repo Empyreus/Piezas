@@ -22,6 +22,8 @@
 **/
 Piezas::Piezas()
 {
+	Piezas board;
+	turn = X;
 }
 
 /**
