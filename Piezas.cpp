@@ -115,7 +115,11 @@ Piece Piezas::gameState()
 					return Invalid;
 				}
 			}
+
+			std::cout << board[j][i] << " | ";
 		}
+
+		std::cout << std::endl;
 
 		if(countX > longestX){
 			longestX = countX;
