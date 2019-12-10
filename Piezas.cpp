@@ -96,6 +96,14 @@ Piece Piezas::pieceAt(int row, int column)
 **/
 Piece Piezas::gameState()
 {
+
+	for(int i = 0; i < 3; i++){
+		for(int j = 0; j < 4; j++){
+			std::cout << board[j][i] << " | ";
+		}
+		std::cout << std::endl;
+	}
+
 	int longestX = 0;
 	int longestO = 0;
 
@@ -116,10 +124,10 @@ Piece Piezas::gameState()
 				}
 			}
 
-			std::cout << board[j][i] << " | ";
+			// std::cout << board[j][i] << " | ";
 		}
 
-		std::cout << std::endl;
+		// std::cout << std::endl;
 
 		if(countX > longestX){
 			longestX = countX;
