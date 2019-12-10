@@ -175,12 +175,12 @@ TEST(PiezasTest, winnerX2)
 	game.dropPiece(1);
 	game.dropPiece(2);
 	game.dropPiece(3);
-	game.dropPiece(1);
-	game.dropPiece(2);
-	game.dropPiece(1);
+	game.dropPiece(0);
 	game.dropPiece(2);
 	game.dropPiece(0);
 	game.dropPiece(2);
+	game.dropPiece(1);
+	game.dropPiece(1);
 	game.dropPiece(3);
 	game.dropPiece(3);
 
