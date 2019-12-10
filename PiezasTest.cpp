@@ -77,7 +77,7 @@ TEST(PiezasTest, sameBoardColumn20)
 	game.dropPiece(2);
 
 
-	ASSERT_EQ(game.pieceAt(0,2), 0);
+	ASSERT_EQ(game.pieceAt(2,2), O);
 }
 
 TEST(PiezasTest, boardReset)
@@ -90,4 +90,11 @@ TEST(PiezasTest, boardReset)
 	game.reset();
 
 	ASSERT_EQ(game.pieceAt(0,3), Blank);
+}
+
+TEST(PiezasTest, boardReset)
+{
+	Piezas game;
+
+	ASSERT_EQ(game.gameState(), Invalid);
 }

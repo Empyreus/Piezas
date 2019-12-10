@@ -96,8 +96,69 @@ Piece Piezas::pieceAt(int row, int column)
 **/
 Piece Piezas::gameState()
 {
+	int longestX = 0;
+	int longestO = 0;
 
-	
-	
+	for(int i = 0; i < 4; i++){
+		int countX = 0;
+		int countO = 0;
+		
+		for(int j = 1; j < 3; j++){
+			if(board[j][i] == board[j-1][i]){
+				if(board[j][i] == X){
+					countX++;
+				}
+				else if(board[j][i] == O){
+					countO++;
+				}
+				else if(board[j][i] == Blank){
+					return Invalid;
+				}
+			}
+		}
+
+		if(countX > longestX){
+			longestX = countX;
+		}
+		if(countO > longestO){
+			longestO = countO;
+		}
+
+	}
+
+	for(int j = 0; j < 3; j++){
+		int countX = 0;
+		int countO = 0;
+		
+		for(int i = 1; i < 4; i++){
+			if(board[j][i] == board[j-1][i]){
+				if(board[j][i] == X){
+					countX++;
+				}
+				else if(board[j][i] == O){
+					countO++;
+				}
+				else if(board[j][i] == Blank){
+					return Invalid;
+				}
+			}
+		}
+
+		if(countX > longestX){
+			longestX = countX;
+		}
+		if(countO > longestO){
+			longestO = countO;
+		}
+
+	}
+
+	if(longestX > longestO){
+		return X;
+	}
+	else if(longestO > longestX){
+		return O;
+	}
+
     return Blank;
 }
