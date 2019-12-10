@@ -29,7 +29,7 @@ TEST(PiezasTest, emptyBoardPeiceCheck)
 TEST(PiezasTest, initBoardPeiceCheck)
 {
 	Piezas game;
-	placePiece(3);
+	dropPiece(3);
 
 	ASSERT_EQ(game.pieceAt(2,3), X);
 }
