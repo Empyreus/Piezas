@@ -23,5 +23,5 @@ TEST(PiezasTest, initBoardPeiceCheck)
 {
 	Piezas game;
 
-	ASSERT_EQ(game.pieceAt(3,4), Blank);
+	ASSERT_EQ(game.pieceAt(2,3), Blank);
 }
