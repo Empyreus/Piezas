@@ -16,6 +16,11 @@ class PiezasTest : public ::testing::Test
 
 TEST(PiezasTest, sanityCheck)
 {
+
+	std::cout << "X: " << X << std::endl;
+	std::cout << "O: " << O << std::endl;
+	std::cout << "Blank: " << Blank << std::endl;
+
 	ASSERT_TRUE(true);
 }
 
@@ -30,12 +35,6 @@ TEST(PiezasTest, initBoardPeiceCheck)
 {
 	Piezas game;
 	game.dropPiece(3);
-
-	std::cout << X << std::endl;
-	std::cout << O << std::endl;
-	std::cout << Blank << std::endl;
-	std::cout << game.pieceAt(2,3) << std::endl;
-
 
 	ASSERT_EQ(game.pieceAt(2,3), X);
 }
