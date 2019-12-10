@@ -31,6 +31,14 @@ TEST(PiezasTest, emptyBoardPeiceCheck)
 	ASSERT_EQ(game.pieceAt(2,3), Blank);
 }
 
+TEST(PiezasTest, emptyBoardPeiceCheck)
+{
+	Piezas game;
+
+	ASSERT_EQ(game.pieceAt(3,4), Invalid);
+}
+
+
 TEST(PiezasTest, initBoardPeiceCheck)
 {
 	Piezas game;

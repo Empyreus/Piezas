@@ -82,6 +82,9 @@ Piece Piezas::dropPiece(int column)
 **/
 Piece Piezas::pieceAt(int row, int column)
 {
+	if(row > 2 || column > 3){
+		return Invalid;
+	}
     return board[row][column];
 }
 
@@ -97,12 +100,12 @@ Piece Piezas::pieceAt(int row, int column)
 Piece Piezas::gameState()
 {
 
-	for(int i = 0; i < 3; i++){
-		for(int j = 0; j < 4; j++){
-			std::cout << board[i][j] << " | ";
-		}
-		std::cout << std::endl;
-	}
+	// for(int i = 0; i < 3; i++){
+	// 	for(int j = 0; j < 4; j++){
+	// 		std::cout << board[i][j] << " | ";
+	// 	}
+	// 	std::cout << std::endl;
+	// }
 
 	int longestX = 0;
 	int longestO = 0;
