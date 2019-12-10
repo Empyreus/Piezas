@@ -96,5 +96,8 @@ Piece Piezas::pieceAt(int row, int column)
 **/
 Piece Piezas::gameState()
 {
+
+	
+	
     return Blank;
 }

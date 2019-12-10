@@ -68,17 +68,19 @@ TEST(PiezasTest, sameBoardColumn32)
 	ASSERT_EQ(game.pieceAt(0,3), X);
 }
 
-TEST(PiezasTest, sameBoardColumn32)
+TEST(PiezasTest, sameBoardColumn20)
 {
 	Piezas game;
 	game.dropPiece(3);
 	game.dropPiece(3);
 	game.dropPiece(3);
+	game.dropPiece(2);
 
-	ASSERT_EQ(game.pieceAt(0,3), X);
+
+	ASSERT_EQ(game.pieceAt(0,2), 0);
 }
 
-TEST(PiezasTest, sameBoardColumn32)
+TEST(PiezasTest, boardReset)
 {
 	Piezas game;
 	game.dropPiece(3);
