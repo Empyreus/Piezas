@@ -31,7 +31,7 @@ TEST(PiezasTest, emptyBoardPeiceCheck)
 	ASSERT_EQ(game.pieceAt(2,3), Blank);
 }
 
-TEST(PiezasTest, emptyBoardPeiceCheck)
+TEST(PiezasTest, outOfBoundsBoardPeiceCheck)
 {
 	Piezas game;
 
