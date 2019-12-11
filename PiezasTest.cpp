@@ -28,7 +28,7 @@ TEST(PiezasTest, emptyBoardPeiceCheck)
 {
 	Piezas game;
 
-	ASSERT_EQ(game.pieceAt(2,3), Blank);
+	ASSERT_EQ(game.pieceAt(0,3), Blank);
 }
 
 TEST(PiezasTest, outOfBoundsBoardPeiceCheck)
@@ -44,7 +44,7 @@ TEST(PiezasTest, initBoardPeiceCheck)
 	Piezas game;
 	game.dropPiece(3);
 
-	ASSERT_EQ(game.pieceAt(2,3), X);
+	ASSERT_EQ(game.pieceAt(0,3), X);
 }
 
 TEST(PiezasTest, sameBoardPeiceCheck)
@@ -213,5 +213,5 @@ TEST(PiezasTest, fulBoardPiece)
 	game.dropPiece(2);
 	game.dropPiece(3);
 
-	ASSERT_EQ(game.pieceAt(0,3), X);
+	ASSERT_EQ(game.pieceAt(0,3), O);
 }
