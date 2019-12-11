@@ -47,6 +47,21 @@ TEST(PiezasTest, initBoardPeiceCheck)
 	ASSERT_EQ(game.pieceAt(0,3), X);
 }
 
+TEST(PiezasTest, boardOutOfBounds+)
+{
+	Piezas game;
+	
+
+	ASSERT_EQ(game.dropPiece(4), Invalid);
+}
+
+TEST(PiezasTest, boardOutOfBounds-)
+{
+	Piezas game;
+	
+	ASSERT_EQ(game.dropPiece(-1), Invalid);
+}
+
 TEST(PiezasTest, sameBoardPeiceCheck)
 {
 	Piezas game;

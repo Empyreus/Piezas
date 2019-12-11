@@ -48,6 +48,10 @@ void Piezas::reset()
 Piece Piezas::dropPiece(int column)
 {
 
+	if(column < 0 || column > 3){
+		return Invalid;
+	}
+
 	if(board[0][column] == Blank){
 		board[0][column] = turn;
 		// std::cout << "Piece at: " << 2 << " " << column << std::endl;
@@ -69,9 +73,6 @@ Piece Piezas::dropPiece(int column)
 	else if (turn == X){
 		turn = O;
 	}
-
-	// std::cout << "Old Turn: " << old_turn << std::endl;
-	// std::cout << "New Turn: " << turn << std::endl;
 
     return old_turn;
 }
